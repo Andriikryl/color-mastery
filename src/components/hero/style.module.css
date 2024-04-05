@@ -1,0 +1,30 @@
+ .hero{
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+ }
+
+.bg__box{
+    mask: linear-gradient(-15deg, transparent 30%, white);
+    --rotate: 0deg;
+    --x: 0px;
+    --y: 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.box{
+    --line: hsl(0 0% 0% / 0.15);
+--size: 80px;
+    width: var(--size);
+    height: var(--size);
+    border: 1px solid var(--line);
+} 
+
+

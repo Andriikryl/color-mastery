@@ -1,0 +1,27 @@
+.wrapper{
+    background-color: #000000;
+    margin-inline: auto;
+    padding-inline: 1rem;
+    display: flex;
+    height: 4rem;
+    align-items: flex-end;
+    border-radius: 1rem;
+    padding-bottom: 0.75rem;
+    gap: 1rem;
+    position: relative;
+    z-index: calc(0/1);
+}
+
+.box{
+    aspect-ratio: 1 / 1;
+    width: 2.5rem;
+    border-radius: 9999px;
+    background-color: #ffffff;
+    & .link{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        place-items: center;
+        color: inherit;
+    }
+}

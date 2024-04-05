@@ -1,0 +1,17 @@
+.random__section{
+    height: 100dvh;
+}
+.palette__wrapper{
+    --layout-grid-min: 20ch;
+    --layout-grid-gap: 2vw;
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(min(100%, var(--layout-grid-min)), 1fr)
+    );
+    gap: var(--layout-grid-gap);
+}
+
+.palette__box{
+    height: 100px;
+}

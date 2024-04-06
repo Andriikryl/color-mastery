@@ -1,0 +1,16 @@
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 210px;
+    gap: 10px;
+}
+.cube{
+    --size: 100px;
+    width: var(--size);
+    height: var(--size);
+    border: 2px solid #14213d;
+}
+
+.cube:nth-child(4){
+    transform: rotate(180deg);
+}

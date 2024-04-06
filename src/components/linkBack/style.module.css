@@ -1,4 +1,5 @@
 .link{
+    margin-inline: auto;
     --size: 50px;
     display: grid;
     place-items: center;

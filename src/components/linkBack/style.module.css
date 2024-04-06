@@ -1,0 +1,13 @@
+.link{
+    --size: 50px;
+    display: grid;
+    place-items: center;
+    width: var(--size);
+    height: var(--size);
+    aspect-ratio: 1/1;
+    border: 3px solid var(--accent-dandelion);
+    color: black;
+    border-radius: 10px;
+    margin-block-end: 10px;
+    background-color: var(--white);
+}

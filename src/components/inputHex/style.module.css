@@ -1,0 +1,30 @@
+.label{
+    font-size: clamp(20px, 5vw + 1rem, 20px);
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    text-transform: uppercase;
+}
+
+
+.form{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.input{
+    border: none;
+    width: 100%;
+    font-family: inherit;
+    font-size: clamp(20px , 5vw + 1rem, 120px);
+    font-weight: inherit;
+    background-color: transparent;
+    color: var(--white);
+    outline: none;
+    border-bottom: 1px solid #c1121f;
+}
+
+.input__erro{
+   border-bottom: 3px solid #c1121f;
+}

@@ -9,6 +9,7 @@ import VisuallyHidden from "@/components/VisuallyHidden/VisuallyHidden";
 import Minus from "@/icons/Minus";
 import { Counter } from "@/components/counter/Counter";
 import LinkBack from "@/components/linkBack/LinkBack";
+import { Title } from "@/components/title/Title";
 
 export default function Random() {
   const [amount, setAmount] = useState(16);
@@ -30,7 +31,7 @@ export default function Random() {
       <Container>
         <div className={styles.group__box}>
           <LinkBack />
-          <h1 className={styles.title}>Random Color Generator</h1>
+          <Title headingLevel="h1">Random Color Generator</Title>
           <div className={styles.control__group}>
             <button className={styles.button} onClick={Increment}>
               <Plus />

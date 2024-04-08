@@ -11,6 +11,7 @@ import styles from "./style.module.css";
 import Link from "next/link";
 import Random from "@/icons/Random";
 import VisuallyHidden from "../VisuallyHidden/VisuallyHidden";
+import Convert from "@/icons/Convert";
 
 interface AppIconProps {
   mouseX: MotionValue;
@@ -28,9 +29,9 @@ const navLinks = [
   },
   {
     id: 2,
-    href: "/",
+    href: "/converter",
     title: "2",
-    svg: <Random />,
+    svg: <Convert />,
   },
   {
     id: 3,

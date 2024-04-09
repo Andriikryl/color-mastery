@@ -1,9 +1,8 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import Container from "@/components/container/Container";
 import { getRandomHex } from "@/utils/randomHex";
 import { colord, extend } from "colord";
-import { motion } from "framer-motion";
 import styles from "./style.module.css";
 import { Title } from "@/components/title/Title";
 import InputHex from "@/components/inputHex/InputHex";

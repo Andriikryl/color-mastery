@@ -1,0 +1,124 @@
+.compare__section{
+    position: relative;
+    background-color: #0f1216;
+    padding-block: 30px;
+}
+
+.wrapper{
+    position: relative;
+    z-index: 100;
+}
+
+.compare__section::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: radial-gradient(ellipse at center, hsl(120, 42.59%, 21.18%, 0.5) 0%, hsl(0, 0%, 0%, 0) 45%);   
+}
+
+.control__group{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.flex__group{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+}
+
+.compare__box{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.ex__block{
+    --grid-square: 4px;
+    width: 100%;
+    max-width: calc(100 * var(--grid-square));
+    aspect-ratio: 1;
+    padding: calc(15 * var(--grid-square));
+    position: relative;
+    overflow: hidden;
+    background-color: var(--white);
+    border-radius: 20px;
+}
+
+.axis__box{
+    --color-border: var(--black-medium);
+    --width-border-l: 2px;
+    --border-l: var(--width-border-l) solid var(--color-border);
+    transform-style: preserve-3d;
+    perspective: 800px;
+    perspective-origin: 50% 50%;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid: "a" 1fr/1fr;
+    justify-items: center;
+    align-items: center;
+    transform: rotateX(-30deg) rotateY(-50deg) translate(-60%,35%);
+    border: var(--border-l);
+    border: 5px dashed  var(--accent-red);
+}
+
+.axis__child{
+    --color-border: var(--black-medium);
+    --width-border-l: 2px;
+    --border-l: var(--width-border-l) solid var(--color-border);
+    transform: translate3d(0px, 0px, -500px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    grid-area: a;
+    width: 50%;
+    height: 50%;
+    border: var(--border-l);
+    border-width: 6px;
+    border: 3px dashed  var(--accent-red);
+}
+
+.axis__x{
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    background: var(--black);
+}
+
+.axis__y{
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    background: var(--black);
+}
+
+.axis__z{
+    text-align: center;
+    width: 400%;
+    height: 1px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) rotateX(0deg) rotateY(-90deg) rotate(0deg);
+    background: linear-gradient(270deg,rgba(28,28,28,0) 45%,#1c1c1c 46%);
+    border: 1px dashed  var(--accent-red);
+}
+
+.delta{
+    position: relative;
+    left: -260px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 34px;
+    color: var(--black);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}

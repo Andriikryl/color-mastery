@@ -13,6 +13,7 @@ import Random from "@/icons/Random";
 import VisuallyHidden from "../VisuallyHidden/VisuallyHidden";
 import Convert from "@/icons/Convert";
 import Compare from "@/icons/Compare";
+import List from "@/icons/List";
 
 interface AppIconProps {
   mouseX: MotionValue;
@@ -42,9 +43,9 @@ const navLinks = [
   },
   {
     id: 4,
-    href: "/",
+    href: "/palettes",
     title: "4",
-    svg: <Random />,
+    svg: <List />,
   },
 ];
 
@@ -57,6 +58,7 @@ export function Nav() {
         onMouseMove={(e) => mouseX.set(e.pageX)}
         onMouseLeave={() => mouseX.set(Infinity)}
         className={styles.wrapper}
+        role="list"
       >
         {navLinks.map((i) => (
           <AppIcon

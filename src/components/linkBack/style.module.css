@@ -1,14 +1,12 @@
 .link{
     margin-inline: auto;
-    --size: 50px;
     display: grid;
     place-items: center;
-    width: var(--size);
-    height: var(--size);
-    aspect-ratio: 1/1;
-    border: 3px solid var(--accent-dandelion);
-    color: black;
-    border-radius: 10px;
-    margin-block-end: 10px;
+    border: 2px solid var(--black);
+    border-radius: 8px;
+    width: 52px;
+    height: 52px;
+    cursor: pointer;
+    color: inherit;
     background-color: var(--white);
 }

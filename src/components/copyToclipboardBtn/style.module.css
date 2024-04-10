@@ -1,0 +1,19 @@
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding-block: 10px;
+    padding-inline: 5px;
+
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 127%;
+    text-align: center;
+    color: var(--black);
+    border: 2px solid var(--black);
+    border-radius: 8px;
+    background-color: transparent;
+    cursor: pointer;
+}

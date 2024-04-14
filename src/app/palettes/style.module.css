@@ -1,7 +1,24 @@
-.flex__group{
+.palette{
     height: 100dvh;
     display: flex;
+    flex-direction: column;
 }
+
+.palette__container{
+    margin: inherit;
+}
+
+.flex__group{
+    display: flex;
+    flex-grow: 1;
+}
+
+@media (max-width: 1300px) {
+    .flex__group{
+        flex-direction: column;
+    }
+}
+
 .box{
     flex-grow: 1;
     height: 100%;
@@ -63,6 +80,7 @@
 
 
 .values__box{
+    margin: 10px;
     display: flex;
     flex-direction: column;
     gap: 10px;

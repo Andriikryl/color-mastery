@@ -15,11 +15,8 @@ const CopyToclipboard: React.FC<CopyToclipboardProps> = ({
   text,
   children,
 }) => {
-  const notify = () =>
-    toast.success(`Color ${text} has been copied to clipboard`);
   function copyToclipboard() {
     copy(text);
-    notify();
   }
   return (
     <>

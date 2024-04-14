@@ -30,7 +30,6 @@ export default function Palettes() {
   };
 
   const saveCurrentPalette = () => {
-    // Check if the current palette is already saved
     const isUnique = savedPalettes.every(
       (palette) => !arraysEqual(palette, colors)
     );
@@ -38,13 +37,11 @@ export default function Palettes() {
     if (isUnique) {
       setSavedPalettes([...savedPalettes, colors]);
     }
-    // Optionally, handle the case where the palette is not unique
-    // For example, you could replace an existing palette or show a message
   };
 
   return (
     <section className={styles.palette}>
-      <Container>
+      <Container className={styles.palette__container}>
         <div className={styles.controls__group}>
           <LinkBack />
           <button className={styles.button} onClick={generateNewColors}>
